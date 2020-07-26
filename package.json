@@ -1,7 +1,7 @@
 {
-    "name": "react-webpack-template",
+    "name": "routine",
     "description": "Manage self-care and chores.",
-    "version": "0.0.8",
+    "version": "0.0.1",
     "license": "MIT",
     "author": "Yves Gurcan",
     "repository": {
