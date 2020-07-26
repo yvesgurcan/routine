@@ -1,4 +1,14 @@
-# React application
+An application that lets the user create recurring tasks coming back automatically after a set amount of time. The aim is to encourage users to create healthy routines for self-care and keeping chores under control.
+
+## Features
+
+-   Tasks are sorted and roughly grouped by the time of the day when they must be accomplished (1pm, morning, 15 minutes after another task).
+-   Tasks don't pile up if they have not been accomplished before they reach the next cycle.
+-   User can see history of the tasks they accomplished by day, week, or month.
+-   Users can see reports that tell them, for example, how many tasks they accomplished in a timely manner.
+-   User is awarded badges for various achievements (task accomplished X days in a row, X tasks accomplished; set up X morning tasks, ...).
+-   App gives encouragement to the user when they accomplish a task.
+-   Accomplished tasks stay clearly visible but are striked through.
 
 ## Main dependencies
 
@@ -37,5 +47,5 @@ This command will run your tests, create a production build at the root of your 
     src
     ├── components
     ├── views
-    ├── index.js
+    ├── index.tsx
     ├── index.html
