@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import styled, { createGlobalStyle } from 'styled-components';
+
+import store from './store/store';
 
 import Menu from './components/Menu';
 
@@ -36,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
 
 ReactDOM.render(
     <HashRouter>
-        <Fragment>
+        <Provider store={store}>
             <GlobalStyles />
             <View>
                 <Menu />
@@ -46,7 +49,7 @@ ReactDOM.render(
                     <Route path="/" component={Home} />
                 </Switch>
             </View>
-        </Fragment>
+        </Provider>
     </HashRouter>,
     document.getElementById('app')
 );

@@ -1,6 +1,22 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import styled from 'styled-components';
+
 import Title from '../components/Title';
+import Input from '../components/Input';
+import Dropdown from '../components/Dropdown';
 
 export default () => {
-    return <Title>Add Routine</Title>;
+    return (
+        <Container>
+            <Title>Add Routine</Title>
+            <Input placeholder="Routine name" />
+            <Input placeholder="Frequency" />
+            <Dropdown options={['Routine', 'Chore']} />
+        </Container>
+    );
 };
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
